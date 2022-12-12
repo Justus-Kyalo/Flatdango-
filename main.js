@@ -1,11 +1,11 @@
-const moviesList = document.getElementById("movie-list");
+
 
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelector("#movie-form").addEventListener("submit", handleQuery);
 });
 function handleQuery(event) {
   event.preventDefault();
-  const movieInput = document.getElementById(search);
+  const movieInput = document.getElementById('search');
   const query = movieInput.value;
 
   fetch(`http://localhost:3000/films/search/title?q=${query}`, {
@@ -21,6 +21,8 @@ function handleQuery(event) {
     });
 }
 function renderFilm(film){
+    const moviesList = document.getElementById("movies-list");
+
     const cardDiv = document.createElement(div);
     div.classList.add('card');
     div.style.width ="18rem;";
