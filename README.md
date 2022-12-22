@@ -1,5 +1,5 @@
 # Flatdango-
-![Screenshot](https://github.com/RemmyKyalo/FLATDANGO-/blob/master/image/screenshot.png)
+![Screenshot](https://github.com/RemmyKyalo/Flatdango-/blob/main/image/screenshot.png)
 # IMPLEMENTATION PROCESS/INSTRUCTIONS
 
 Implementation processes and instructions have been added  as  comments in the script.
