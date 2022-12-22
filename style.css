@@ -1,15 +1,31 @@
-#runtime {
+body {
+  background-color: #885FFF;
+}
+
+.heading {
+  background-color: #4675;
+  margin-bottom: 20px;
+  padding: 5px 0px 5px 15px;
+}
+
+.title {
   background-color: #333333;
-  color: #3e8fde;
+  padding: 5px;
+  color: RED;
+}
+
+#runtime {
+  /*background-color: #333333;*/
+  color: floralwhite;
   padding: 0px 0px 5px 5px;
 }
 
 .content {
-  color: #3e8fde;
+  color: yellow;
 }
 
 #subtitle {
-  color: white;
+  color: lawngreen;
   margin-left: 55px;
 }
 
