@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Fetch and display the list of movies
   fetchMovies(url);
 });
-
+//create fetch function
 function fetchMovies(url) {
   fetch(url)
     .then((response) => response.json())
@@ -73,6 +73,7 @@ function setUpMovieDetails(childMovie) {
   // Set the text content of the ticket number element to the number of available tickets
   tickets.textContent = childMovie.capacity - childMovie.tickets_sold;
 }
+const btn =document.getElementById('buy-ticket');
 
 btn.addEventListener("click", function (event) {
   // Select the element with the ID "ticket-num"
@@ -84,7 +85,7 @@ btn.addEventListener("click", function (event) {
   // If there are remaining tickets
   if (remTickets > 0) {
     // Decrement the number of remaining tickets
-    document.querySelector("#ticket-num").textContent = remTickets - 1;
+    document.querySelector("#ticket-num").textContent = remTickets-1;
   }
   // If there are no remaining tickets
   else if (parseInt(remTickets, 10) === 0) {
